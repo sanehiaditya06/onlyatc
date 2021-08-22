@@ -1,2 +1,2 @@
 web: onlyatc-server
-worker: onlyatc-server
+main: onlyatc-server
