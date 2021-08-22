@@ -34,7 +34,7 @@ func main() {
 	go func() {
 		log.Printf("Listening on port %s", port)
 		srv.ListenAndServe()
-		log.Printf("Listening on %s", Addr)
+		log.Printf("Listening on %s", srv)
 	}()
 
 	// Wait for an interrupt
