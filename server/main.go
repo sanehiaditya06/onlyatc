@@ -33,8 +33,9 @@ func main() {
 	// Start the server
 	go func() {
 		log.Printf("Listening on port %s", port)
-		srv.ListenAndServe()
 		log.Printf("Listening on %s", srv)
+		srv.ListenAndServe()
+		
 	}()
 
 	// Wait for an interrupt
