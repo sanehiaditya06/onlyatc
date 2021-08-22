@@ -1,1 +1,1 @@
-server: main.go
+server: onlyatc-server
