@@ -14,7 +14,7 @@ import (
 // Starting the server
 func main() {
 	// This is the domain the server should accept connections for.
-        domains := string{"www.onlydrops.in"}
+        domains := "www.onlydrops.in"
 	handler := i.NewRouter()
 
 	port := os.Getenv("PORT")
