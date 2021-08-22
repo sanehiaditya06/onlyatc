@@ -1,1 +1,1 @@
-worker: server
+web: server
