@@ -14,7 +14,7 @@ import (
 // Starting the server
 func main() {
 	// This is the domain the server should accept connections for.
-        domains := "www.onlydrops.in"
+        //domains := "www.onlydrops.in"
 	handler := i.NewRouter()
 
 	port := os.Getenv("PORT")
@@ -24,7 +24,7 @@ func main() {
 	}
 
 	srv := &http.Server{
-		Addr:         domains + ":" + port,
+		Addr:         "https://onlyatc-server.herokuapp.com" + ":" + port,
 		Handler:      handler,
 		ReadTimeout:  5 * time.Second,
 		WriteTimeout: 10 * time.Second,
