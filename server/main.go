@@ -24,7 +24,7 @@ func main() {
 	}
 
 	srv := &http.Server{
-		Addr:         "https://onlyatc-server.herokuapp.com" + ":" + port,
+		Addr:         ":" + port,
 		Handler:      handler,
 		ReadTimeout:  5 * time.Second,
 		WriteTimeout: 10 * time.Second,
@@ -32,6 +32,7 @@ func main() {
 	}
 	// Start the server
 	go func() {
+		log.Printf("Listening on %s", Addr)
 		log.Printf("Listening on port %s", port)
 		srv.ListenAndServe()
 	}()
