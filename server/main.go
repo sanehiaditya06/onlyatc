@@ -18,7 +18,7 @@ func main() {
 	handler := i.NewRouter()
 
 	port := os.Getenv("PORT")
-	if port == "" {
+	if port == os.Getenv("PORT") {
 		port = "8080"
 		log.Printf("Defaulting to port %s", port)
 	}
