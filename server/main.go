@@ -33,7 +33,7 @@ func main() {
 	// Start the server
 	go func() {
 		log.Printf("Listening on port %s", port)
-		log.Printf("Listening on %s", srv)
+		log.Printf("Listening on %s", srv.Addr)
 		srv.ListenAndServe()
 		
 	}()
