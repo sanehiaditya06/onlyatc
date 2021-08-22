@@ -1,1 +1,1 @@
-server: onlyatc-server
+worker: onlyatc-server
