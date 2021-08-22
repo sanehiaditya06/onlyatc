@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://bonzay.io/favicon/favicon.ico" />
+    <meta property="og:locale" content="en_US" />
+    {{if .Title}}
+    <title>OnlyATC</title>
+    <meta property="og:title" content="OnlyATC" />
+    {{else}}
+    <meta property="og:title" content="OnlyATC" />
+    {{
+      end
+    }}
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.onlydrops.in" />
+    <meta property="og:description" content="{{.Description}}" />
+    <meta name="theme-color" content="#92EBF7" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://i.imgur.com/l9xtNtc.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://i.imgur.com/l9xtNtc.jpg"
+    />
+    <link rel="stylesheet" href="/css/background.css" />
+    <link rel="stylesheet" href="/css/default.css" />
+    <title>{{.Title}}</title>
+  </head>
+  <body>
+    <div class="lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div id="main">
+      {{if .IsError}}
+      <div class="fof error">
+        <h1 class="hover-grow">OnlyATC</h1>
+        <p>Add shit to your lists!</p>
+      </div>
+      {{else}}
+      <div class="fof">
+        <h1>OnlyATC</h1>
+        <p>Add shit to your lists!</p>
+      </div>
+      {{ end }}
+    </div>
+  </body>
+</html>
