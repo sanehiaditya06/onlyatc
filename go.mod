@@ -1,4 +1,4 @@
-module github.com/bonzayio/go-atc-server
+module github.com/adisaneadi/onlyatc-server 
 
 go 1.16
 
